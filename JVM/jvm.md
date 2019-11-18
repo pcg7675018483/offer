@@ -1,4 +1,11 @@
 ## 1.谈谈JVM内存？
+-   线程共享 : 
+    -   heap堆区
+    -   方法栈
+-   线程私有 :
+    -   jvm栈
+    -   本地方法栈
+    -   程序计数器 
 
 ## 2.哪些情况会出现OutOfMemoryException 和 StackOverflowException
 -   OutOfMemoryException   
