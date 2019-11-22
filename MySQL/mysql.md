@@ -2,6 +2,7 @@
 -   选择合适的数据库引擎
 -   字段类型尽可能用小的类型代替
 -   where条件，group by, order by 字段加适量索引
+-   自增类型的主键
 
 ## 2.MySQL有哪些存储引擎？MyIsAM和InnoDB的区别？
 -   存储引擎
