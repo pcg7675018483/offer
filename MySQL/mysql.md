@@ -21,3 +21,16 @@
 -   普通索引
 -   全文索引
 
+## 4.MySQL主从复制原理
+-   Master服务器开启binlog,执行的事务操作写入到日志
+-   Slave 异步io线程读取Master上的binlog写入到自己的中继日志
+-   Slave 读取中继日志写入到自己
+
+## 5.主从复制延迟
+-   查看主从复制是否有延迟： 命令:show slave status   Seconds_Behind_Master的值是延时时间单位ms
+-   解决办法:
+    -   从库IO多线程复制
+    -   升级丛库的硬件资源
+    -   分库，将原来一个库分成多个库
+ 
+
